@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_LibrosPrestados" targetNamespace="http://tempuri.org/DS_LibrosPrestados.xsd" xmlns:mstns="http://tempuri.org/DS_LibrosPrestados.xsd" xmlns="http://tempuri.org/DS_LibrosPrestados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BibliotecaJMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BibliotecaJMConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BibliotecaJM.Properties.Settings.GlobalReference.Default.BibliotecaJMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LibrosPrestadosTableAdapter" GeneratorDataComponentClassName="LibrosPrestadosTableAdapter" Name="LibrosPrestados" UserDataComponentName="LibrosPrestadosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BibliotecaJMConnectionString (Settings)" DbObjectName="BibliotecaJM.dbo.LibrosPrestados" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id_lib, titulo_lib, fecha_presta_pre, fecha_devol_pre FROM dbo.LibrosPrestados</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_lib" DataSetColumn="id_lib" />
+              <Mapping SourceColumn="titulo_lib" DataSetColumn="titulo_lib" />
+              <Mapping SourceColumn="fecha_presta_pre" DataSetColumn="fecha_presta_pre" />
+              <Mapping SourceColumn="fecha_devol_pre" DataSetColumn="fecha_devol_pre" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_LibrosPrestados" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DS_LibrosPrestados" msprop:Generator_UserDSName="DS_LibrosPrestados">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LibrosPrestados" msprop:Generator_TableClassName="LibrosPrestadosDataTable" msprop:Generator_TableVarName="tableLibrosPrestados" msprop:Generator_TablePropName="LibrosPrestados" msprop:Generator_RowDeletingName="LibrosPrestadosRowDeleting" msprop:Generator_RowChangingName="LibrosPrestadosRowChanging" msprop:Generator_RowEvHandlerName="LibrosPrestadosRowChangeEventHandler" msprop:Generator_RowDeletedName="LibrosPrestadosRowDeleted" msprop:Generator_UserTableName="LibrosPrestados" msprop:Generator_RowChangedName="LibrosPrestadosRowChanged" msprop:Generator_RowEvArgName="LibrosPrestadosRowChangeEvent" msprop:Generator_RowClassName="LibrosPrestadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_lib" msprop:Generator_ColumnVarNameInTable="columnid_lib" msprop:Generator_ColumnPropNameInRow="id_lib" msprop:Generator_ColumnPropNameInTable="id_libColumn" msprop:Generator_UserColumnName="id_lib" type="xs:int" />
+              <xs:element name="titulo_lib" msprop:Generator_ColumnVarNameInTable="columntitulo_lib" msprop:Generator_ColumnPropNameInRow="titulo_lib" msprop:Generator_ColumnPropNameInTable="titulo_libColumn" msprop:Generator_UserColumnName="titulo_lib" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fecha_presta_pre" msprop:Generator_ColumnVarNameInTable="columnfecha_presta_pre" msprop:Generator_ColumnPropNameInRow="fecha_presta_pre" msprop:Generator_ColumnPropNameInTable="fecha_presta_preColumn" msprop:Generator_UserColumnName="fecha_presta_pre" type="xs:dateTime" />
+              <xs:element name="fecha_devol_pre" msprop:Generator_ColumnVarNameInTable="columnfecha_devol_pre" msprop:Generator_ColumnPropNameInRow="fecha_devol_pre" msprop:Generator_ColumnPropNameInTable="fecha_devol_preColumn" msprop:Generator_UserColumnName="fecha_devol_pre" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

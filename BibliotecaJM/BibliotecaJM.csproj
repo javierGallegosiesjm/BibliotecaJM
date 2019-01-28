@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF9E84B7-2A20-4E86-A5FE-AD1266B8DE72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BibliotecaJM</RootNamespace>
+    <AssemblyName>BibliotecaJM</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DS_Configuracion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Configuracion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Historico_prestamos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Historico_prestamos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Lectores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Lectores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Libros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Libros.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_LibrosPrestados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_LibrosPrestados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Prestamos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Prestamos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Provincias.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Provincias.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Secciones.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Secciones.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Usuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Usuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Configuracion.Designer.cs">
+      <DependentUpon>FM_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Devoluciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Devoluciones.Designer.cs">
+      <DependentUpon>FM_Devoluciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Graficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Graficos.Designer.cs">
+      <DependentUpon>FM_Graficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Lectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Lectores.Designer.cs">
+      <DependentUpon>FM_Lectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Libros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Libros.Designer.cs">
+      <DependentUpon>FM_Libros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Listados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Listados.Designer.cs">
+      <DependentUpon>FM_Listados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Modelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Modelo.Designer.cs">
+      <DependentUpon>FM_Modelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Prestamos.Designer.cs">
+      <DependentUpon>FM_Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FM_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FM_Principal.Designer.cs">
+      <DependentUpon>FM_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioActual.cs" />
+    <EmbeddedResource Include="FM_Modelo.resx">
+      <DependentUpon>FM_Modelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FM_Principal.resx">
+      <DependentUpon>FM_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DS_Configuracion.xsc">
+      <DependentUpon>DS_Configuracion.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Configuracion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Configuracion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Configuracion.xss">
+      <DependentUpon>DS_Configuracion.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Historico_prestamos.xsc">
+      <DependentUpon>DS_Historico_prestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Historico_prestamos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Historico_prestamos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Historico_prestamos.xss">
+      <DependentUpon>DS_Historico_prestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Lectores.xsc">
+      <DependentUpon>DS_Lectores.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Lectores.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Lectores.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Lectores.xss">
+      <DependentUpon>DS_Lectores.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Libros.xsc">
+      <DependentUpon>DS_Libros.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Libros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Libros.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Libros.xss">
+      <DependentUpon>DS_Libros.xsd</DependentUpon>
+    </None>
+    <None Include="DS_LibrosPrestados.xsc">
+      <DependentUpon>DS_LibrosPrestados.xsd</DependentUpon>
+    </None>
+    <None Include="DS_LibrosPrestados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_LibrosPrestados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_LibrosPrestados.xss">
+      <DependentUpon>DS_LibrosPrestados.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Prestamos.xsc">
+      <DependentUpon>DS_Prestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Prestamos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Prestamos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Prestamos.xss">
+      <DependentUpon>DS_Prestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Provincias.xsc">
+      <DependentUpon>DS_Provincias.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Provincias.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Provincias.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Provincias.xss">
+      <DependentUpon>DS_Provincias.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Secciones.xsc">
+      <DependentUpon>DS_Secciones.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Secciones.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Secciones.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Secciones.xss">
+      <DependentUpon>DS_Secciones.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Usuarios.xsc">
+      <DependentUpon>DS_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Usuarios.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Usuarios.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DS_Usuarios.xss">
+      <DependentUpon>DS_Usuarios.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
