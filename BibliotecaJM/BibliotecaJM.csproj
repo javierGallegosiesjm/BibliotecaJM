@@ -56,6 +56,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_Historico_prestamos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DS_Lectores.cs">
+      <DependentUpon>DS_Lectores.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DS_Lectores.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

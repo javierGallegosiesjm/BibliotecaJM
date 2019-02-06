@@ -64,6 +64,7 @@ namespace BibliotecaJM
             formulario.MdiParent = this;
             formulario.Dock = DockStyle.Fill;
             formulario.Show();
+            
             this.Text = título;
         }
 
