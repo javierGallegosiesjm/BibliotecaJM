@@ -20,12 +20,23 @@ namespace BibliotecaJM
 
         private void FM_Principal_Load(object sender, EventArgs e)
         {
+
+        }
+        private void FM_Principal_Shown(object sender, EventArgs e)
+        {
             usuarioActual.Nombre = "admin";
             usuarioActual.TipoUsuario = "A";
+            FM_Login f1 = new FM_Login();
+            f1.ShowDialog();
+            if (f1.usuarioActual == null)
+            {
+                this.Close();
+            }
+            this.usuarioActual = f1.usuarioActual;
         }
         private void tsbLectores_Click(object sender, EventArgs e)
         {
-            VisualizarFormularioYTítulo(new FM_Lectores(usuarioActual),"Mantenimiento lectores");
+            VisualizarFormularioYTítulo(new FM_Lectores(usuarioActual), "Mantenimiento lectores");
         }
 
         private void tsbLibros_Click(object sender, EventArgs e)
@@ -64,7 +75,7 @@ namespace BibliotecaJM
             formulario.MdiParent = this;
             formulario.Dock = DockStyle.Fill;
             formulario.Show();
-            
+
             this.Text = título;
         }
 
@@ -73,5 +84,7 @@ namespace BibliotecaJM
             foreach (ToolStripButton boton in toolStrip1.Items)
                 boton.CheckState = CheckState.Unchecked;
         }
+
+
     }
 }

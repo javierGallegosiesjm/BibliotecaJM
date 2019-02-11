@@ -426,7 +426,7 @@
             // FM_Lectores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(1202, 433);
+            this.ClientSize = new System.Drawing.Size(1031, 433);
             this.Controls.Add(this.Borrar);
             this.Controls.Add(this.bModificar);
             this.Controls.Add(this.bInsertar);
