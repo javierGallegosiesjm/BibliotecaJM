@@ -117,5 +117,12 @@ namespace BibliotecaJM
             lectoresBindingSource.CancelEdit();
             ModoBusqueda();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Lookup_Provincias lp = new Lookup_Provincias();
+            lp.ShowDialog();
+            provincia_lecTextBox.Text = lp.IDProvincia.ToString();
+        }
     }
 }

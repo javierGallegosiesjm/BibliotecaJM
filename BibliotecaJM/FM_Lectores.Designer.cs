@@ -67,6 +67,7 @@
             this.bModificar = new System.Windows.Forms.Button();
             this.Borrar = new System.Windows.Forms.Button();
             this.lectoresTableAdapter = new BibliotecaJM.DS_LectoresTableAdapters.lectoresTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             id_lecLabel = new System.Windows.Forms.Label();
             nombre_lecLabel = new System.Windows.Forms.Label();
             domicilio_lecLabel = new System.Windows.Forms.Label();
@@ -290,6 +291,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.bCancelar);
             this.groupBox2.Controls.Add(this.bAceptar);
             this.groupBox2.Controls.Add(id_lecLabel);
@@ -308,7 +310,7 @@
             this.groupBox2.Controls.Add(this.fecha_penalizacion_lecDateTimePicker);
             this.groupBox2.Location = new System.Drawing.Point(678, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(294, 382);
+            this.groupBox2.Size = new System.Drawing.Size(319, 382);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
@@ -423,6 +425,16 @@
             // 
             this.lectoresTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(277, 115);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(28, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FM_Lectores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,5 +490,6 @@
         private System.Windows.Forms.Button bInsertar;
         private System.Windows.Forms.Button bModificar;
         private System.Windows.Forms.Button Borrar;
+        private System.Windows.Forms.Button button1;
     }
 }
